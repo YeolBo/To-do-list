@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#63877B7B"
+        android:padding="10dp"
+        tools:ignore="UselessParent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4.9"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="true"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <Button
+            android:id="@+id/dialog_input_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="입력" />
+    </LinearLayout>
+</FrameLayout>
